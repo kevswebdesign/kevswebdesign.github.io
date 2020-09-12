@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+    <title>Vinod nalawade</title>
+       <link href='https://fonts.googleapis.com/css?family=Galada' rel='stylesheet'>
+    <link rel="stylesheet" href="C:\Users\vinod\Desktop\html\CSS\coursera.css">
+
+  </head>
+  <body> 
+<div id="title-div">
+        <h1 id="title">Vinod Nalawade</h1>
+        <hr style="height:1px; background-color:gray">    
+  <br>
+  <div id="nav">
+       <nav id="nav">
+        <a href="">Home</a>
+        <a name="contact"></a>
+        <a href="#contact">contact</a>
+        <a href="">News</a>
+        <a href="">About</a>
+      </nav>
+        </div>
+        </div>
+  <section class="half">
+    <h2>Favorite Foods</h2>
+      <ul>
+      <li>pizza</li>
+      <li>Burger</li>
+      <li>Pineapple</li>
+      <li>fish</li>
+    </ul>
+    </section>
+    <section class="half">
+   <h2>Achivements</h2>
+    <p display:inline;>progress in <span style="color:red">this course</span>(100%)
+      <progress min ="0" max="100" value="100">100%</progress><br>
+    <p display:inline;>progress in the <span style="color:yellow">specialization capstone</span>(20%)
+      <progress min="0" max="100" value="20">20%</progress><br>
+      <p>progress in life goals(67%)
+        <progress min ="0"max="100"value="67">67%</progress>
+        </p>
+        </section>
+        <section class="whole">
+  <h2> More About Me</h2>
+  <details> 
+  <summary>My Childhood </summary>
+<p>I Grew up in pune, Maharashtra</p>
+    </details>
+   </section>
+     
+   <form>
+   <hr style="height:1px; background-color:black margin:10px;">
+   <h2> Guess my dream car</h2><br>
+<input id="merc" type="radio" name="cars" value="mercedes">Mercedes<br>
+<input id="toyota" type="radio" name="cars" value="Toyota">Toyota<br>
+<input id="maruti" type="radio" name="cars" value="maruti">Maruti<br>
+
+<h2>Guess my favourite books any two</h2><br>
+<input id="sherlock" type="checkbox" name ="books" value="sherlock">Sherlock<br>
+<Input id ="lincoln" type="checkbox" name ="books" value="Lincoln">Lincoln<br>
+<input id="rama" type="checkbox" name ="books" value="rama">Rama<br>
+  
+<h2>What is the model of your car?</h2><br>
+<select id="dropdown">
+<option value="Merc">Mercedes</option>
+<option value="toyota">Toyota</option>
+<option value="maurti">Maruti</option>
+</select><br>
+<input id="submit" button type="submit"></input>
+   </form> 
+
+
+<P id="main">The United States of America (USA), commonly known as the United States (U.S. or US) or America, is a country mostly located in central North America, between Canada and Mexico. It consists of 50 states, a federal district, five major self-governing territories, and various possessions.[h] At 3.8 million square miles (9.8 million square kilometers), it is the world's third- or fourth-largest country by total area.[d] With a population of over 328 million, it is the third most populous country in the world. The country's capital is Washington, D.C., and its most populous city is New York City.
+
+Paleo-Indians migrated from Siberia to the North American mainland at least 12,000 years ago, and European colonization began in the 16th century. The United States emerged from the thirteen British colonies established along the East Coast. Disputes with Great Britain led to the American Revolutionary War (1775–1783), which established independence. In the late 18th century, the U.S. began vigorously expanding across North America, gradually acquiring new territories, oftentimes conquering and displacing Native Americans, and admitting new states; by 1848, the United States spanned the continent. Slavery was legal in the southern United States until the second half of the 19th century, when the American Civil War led to its abolition. The Spanish–American War and World War I established the U.S. as a world power, a status confirmed by the outcome of World War II. During the Cold War, the United States and the Soviet Union engaged in various proxy wars, but avoided direct military conflict. They also competed in the Space Race, culminating in the 1969 spaceflight that first landed humans on the Moon. The Soviet Union's collapse in 1991 ended the Cold War and left the United States as the world's sole superpower.<p>
+
+
+<!-- geo location>
+<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>-->
+</body><br>
+
+<footer>
+  <img src="http://www.intro-webdesign.com/images/newlogo.png" alt="a">This page was created by vinod Nalawade & colleen Van Lent. To know more about web design, visit <a href="https://www.intro-webdesign.com">Intro to web Design.</a>
+</footer>
+
+<p>Contact us at:<br>Mayuri Residency,<br>Pune-411048</p>
+
+<a input id="a" href="mailto:vinodnalawade@gmaail.com">contact us now</a>
+<a  input id="a" href="mailto:vinodnalawade@gmaail.com">call me</a>
+<a  input id="a" href="mailto:vinodnalawade@gmaail.com">Details</a>
+
+
+
+<section class="new">
+
+<h3> Weight Converter</h3>
+<p>
+  <label>Pounds</label>
+  <input id="inputPounds" type="number" placeholder="Pounds" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+</p>
+<p>Kilograms: <span id="outputKilograms"></span></p>
+
+<script>
+function weightConverter(valNum) {
+  document.getElementById("outputKilograms").innerHTML=valNum/2.2046;
+}
+</script>
+</section>
+<section class="new">
+<h3>Length Converter</h3>
+<p>
+<label>Centimeter</lable>
+<input id="inputCentimeter" type="number" placeholder="Centimeter" oninput="lenghtConverter(this.value)" onchange="lenghtConverter(this.valu">
+</p>
+<P>Inches:<span id="outputInches"></span></p>
+
+<script>
+function lenghtConverter(valNum){
+  document.getElementById("outputInches").innerHTML=valNum/2.54;
+}
+  </script>
+</section>
+<section class="new">
+  <h3>Speed Converter</h3>
+  <p>
+  <label>KPH</lable>
+  <input id="inputKph" type="number" placeholder="KPH" oninput="speedConverter(this.value)" onchange="speedConverter(this.value">
+  </p>
+  <P>MPH:<span id="outputMph"></span></p>
+  
+  <script>
+  function speedConverter(valNum){
+    document.getElementById("outputMph").innerHTML=valNum/1.60934;
+  }
+  </script>
+
+</section>
+</html>
